@@ -22,3 +22,5 @@ function changeTheme() {
     }
 }
           
+
+console.log(selectElem);
