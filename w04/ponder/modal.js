@@ -1,38 +1,35 @@
 
-const galleryImages = document.querySelectorAll(".gallery");
+const gallery = document.querySelector('.gallery');
+const modal = document.querySelector('dialog');
+const modalImage = modal.querySelector('img');
+const closeButton = modal.querySelector('.close-viewer');
 
-const modal = document.querySelector("#modal");
-const modalImage = document.querySelector("#modalImage");
-const closeModal = document.querySelector("#closeModal");
+// Event listener for opening the modal
+gallery.addEventListener('click', openModal);
 
-galleryImages.forEach((image) => {
+function openModal(e) {
+    console.log(e.target);
+    
+    const img = e.target;
+    const src = img.getAttribute('src');
+    const alt = img.getAttribute('alt');
+    const full = src.replace('sm','full');
 
-  image.addEventListener("click", () => {
-
+    modalImage.src = full;
+    modalImage.alt = alt;
+    
     modal.showModal();
-
-    modalImage.src = image.src;
-    modalImage.alt = image.alt;
-
-  });
-
-});
-
-closeModal.addEventListener("click", () => {
-  modal.close();
-});
-
-modal.addEventListener("click", (event) => {
-
-  const dialogDimensions = modal.getBoundingClientRect();
-
-  if (
-    event.clientX < dialogDimensions.left ||
-    event.clientX > dialogDimensions.right ||
-    event.clientY < dialogDimensions.top ||
-    event.clientY > dialogDimensions.bottom
-  ) {
+    
+}
+// Close modal on button click
+closeButton.addEventListener('click', () => {
     modal.close();
-  }
-
 });
+
+// Close modal if clicking outside the image
+modal.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        modal.close();
+    }
+});
+          
