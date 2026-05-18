@@ -98,3 +98,39 @@ footer {
         }
 
 }
+
+
+nav.show {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+nav.show a {
+    display: block;
+    color: white;
+    padding: 5px;
+}
+
+.viewer {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: rgba(0,0,0,.8);
+}
+
+.viewer img {
+    display: block;
+    border: none;
+    margin: 10vh auto;
+}
+
+.close-viewer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    cursor: pointer;
+}
