@@ -1,0 +1,166 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  color: black;
+}
+
+header,
+main,
+footer {
+  width: 400px;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 6px;
+  border: 1px solid #333;
+  border-bottom: none;
+  padding: 0 6px;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-size: 16px;
+  text-align: center;
+  color: #2b1838;
+  margin: 8px 0 10px;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: end;
+  gap: 20px;
+  border-top: 1px solid #e8a86e;
+  border-bottom: 1px solid #e8a86e;
+  padding: 10px 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #b00020;
+  font-size: 7px;
+}
+
+main {
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+  padding: 20px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 65px 1fr;
+  gap: 12px;
+  border-top: 1px solid #e8a86e;
+  border-bottom: 1px solid #e8a86e;
+  padding: 12px 0 18px;
+}
+
+.book_info {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  text-align: right;
+  font-size: 8px;
+  line-height: 1.7;
+}
+
+.book_info p {
+  margin: 0 0 4px;
+}
+
+.book-card {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.book-card h2 {
+  font-family: Georgia, serif;
+  font-size: 13px;
+  color: #b00020;
+  margin: 58px 0 10px;
+}
+
+.book-card img {
+  width: 75px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.book-card p {
+  font-size: 8px;
+  margin: 0;
+}
+
+footer {
+  border: 1px solid #333;
+  border-top: none;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 8px;
+}
+
+/* ---------- LARGER DEVICES ---------- */
+
+@media (min-width: 600px) {
+  header,
+  main,
+  footer {
+    width: 600px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  nav {
+    gap: 30px;
+    padding: 12px 0;
+  }
+
+  nav a {
+    font-size: 8px;
+  }
+
+  main {
+    padding: 20px 30px;
+  }
+
+  .card {
+    grid-template-columns: 165px 1fr;
+    gap: 20px;
+    padding: 35px 0 30px;
+  }
+
+  .book_info {
+    font-size: 10px;
+    line-height: 1.7;
+    border-right: 1px solid #e8a86e;
+    padding-right: 16px;
+  }
+
+  .book-card h2 {
+    font-size: 16px;
+    margin: 0 0 15px;
+  }
+
+  .book-card img {
+    width: 130px;
+    margin-bottom: 12px;
+  }
+
+  .book-card p {
+    font-size: 9px;
+    max-width: 320px;
+  }
+
+  footer {
+    font-size: 9px;
+  }
+}
