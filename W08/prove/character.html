@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Card</title>
+    <link rel="stylesheet" href="character.css">
+    <script src="character.js" defer></script>
+
+    <meta property="og:title" content="Character Card">
+    <meta property="og:description" content="A fantasy character card built with JavaScript objects.">
+    <meta property="og:image" content="images/snortleblat.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Character Card">
+    <meta name="twitter:description" content="A fantasy character card built with JavaScript objects.">
+    <meta name="twitter:image" content="images/snortleblat.webp">
+</head>
+<body>
+     <main>
+    <section class="card">
+      <img id="character-image" src="" alt="Fantasy character">
+      <h1 id="character-name"></h1>
+
+      <div class="stats">
+        <p><strong>Class:</strong> <span id="character-class"></span></p>
+        <p><strong>Level:</strong> <span id="character-level"></span></p>
+        <p><strong>Health:</strong> <span id="character-health"></span></p>
+        <p id="message"></p>
+      </div>
+
+      <div class="buttons">
+        <button id="attack-button">Attack</button>
+        <button id="level-button">Level Up</button>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

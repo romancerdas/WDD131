@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eef2f5;
+  margin: 0;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 400px;
+  background: #313131;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+#character-image {
+  width: 100%;
+  display: block;
+}
+
+#character-name {
+  margin: 0;
+  padding: 20px 35px;
+  background-color: #6d8288;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.stats {
+  padding: 20px 35px;
+}
+
+.stats p {
+  margin: 8px 0;
+  color: white;
+  font-size: 1.1rem;
+}
+
+#message {
+  color: #ffd166;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #6d8288;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #596d73;
+}
