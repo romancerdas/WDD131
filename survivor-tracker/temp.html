@@ -1,0 +1,95 @@
+# Survivor Season Tracker Site Plan
+
+## Roman Cerdas
+
+## WDD 131-[section]
+
+---
+
+## Overview
+
+### Purpose
+
+The purpose of this website is to help Survivor fans track which seasons they have watched, browse basic season information, and choose what season to watch next.
+
+### Audience
+
+The audience is Survivor fans, especially people who are watching the show for the first time or trying to keep track of many seasons.
+
+### Dynamic elements
+
+JavaScript will be used to display Survivor season cards from an array of season objects. Users will be able to search seasons, filter by era or location, mark seasons as watched, and click a button to get a random season recommendation. The site will use event listeners, conditionals, objects, arrays, and array methods such as `filter()`, `forEach()`, and `find()`.
+
+---
+
+## Branding
+
+### Website Logo
+
+Survivor Season Tracker
+
+---
+
+## Style Guide
+
+### Color Palette
+
+Palette URL: https://coolors.co/1f3b2d-f2c14e-d95d39-f5f5f5-222222
+
+Primary: `#1F3B2D`  
+Secondary: `#F2C14E`  
+Accent 1: `#D95D39`  
+Background: `#F5F5F5`  
+Text: `#222222`
+
+### Typography
+
+#### Heading Font: Oswald
+
+#### Paragraph Font: Arial
+
+### Normal paragraph example
+
+Track your Survivor journey by searching seasons, marking watched seasons, and finding your next season to watch.
+
+### Colored paragraph example
+
+You have watched 8 out of 48 Survivor seasons.
+
+### Navigation
+
+Home  
+Seasons  
+Watchlist
+
+---
+
+## Content
+
+### Home page
+
+The home page will introduce the Survivor Season Tracker. It will include a hero image related to a tropical island, fire, or outdoor survival theme. It will explain that users can browse seasons, mark watched seasons, and get a recommendation.
+
+Example content:
+
+- “Track every Survivor season in one place.”
+- “Search by season name, location, or era.”
+- “Mark seasons as watched and see your progress.”
+- “Not sure what to watch next? Get a random season suggestion.”
+
+### Seasons page
+
+This page will display season cards using JavaScript.
+
+Each season object will include:
+
+```js
+{
+  season: 20,
+  title: "Heroes vs. Villains",
+  location: "Samoa",
+  era: "Classic",
+  winner: "Sandra",
+  players: 20,
+  watched: false
+}

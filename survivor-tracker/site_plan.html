@@ -1,0 +1,142 @@
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8" />
+		<title>Site Plan</title>
+		<link type="text/css" rel="stylesheet" href="site-plan.css" />
+	</head>
+
+	<body>
+		<header>
+			<h1>Survivor Season Tracker Site Plan</h1>
+			<h2>Roman Cerdas</h2>
+			<h2>WDD 131</h2>
+			<!-- In the header above, add the name or your site, your name and class number. For example if you are in section 3 you would put WDD 131.03 -->
+		</header>
+		<main>
+			
+			<hr />
+			<h2>Overview</h2>
+			<h3>Purpose</h3>
+			<p>The purpose of this website is to help Survivor fans track which seasons they have watched, browse basic season information, and choose what season to watch next.
+</p>
+			<!-- change this -->
+
+			<h3>Audience</h3>
+			<p>The audience is Survivor fans, especially people who are watching the show for the first time or trying to keep track of many seasons.
+</p>
+			<!-- change this -->
+
+			<h3>Dynamic elements</h3>
+			<p>JavaScript will be used to display Survivor season cards from an array of season objects. Users will be able to search seasons, filter by era or location, mark seasons as watched, and click a button to get a random season recommendation. The site will use event listeners, conditionals, objects, arrays, and array methods such as `filter()`, `forEach()`, and `find()`.
+</p>
+			<!-- change this -->
+
+			<hr />
+			<h2>Branding</h2>
+			<h3>Website Logo</h3>
+			<!-- Replace this with some sort of logo for your site.  A logo can be as simple as the name of your site in a nice font :) -->
+			<img src="/survivor-tracker/images/survivor-site-logo.png" alt="Logo image" />
+			<hr />
+			<h2>Style Guide</h2>
+
+			<h3>Color Palette</h3>
+			<!--  The colors you choose for a website are one of the most important decisions you will make. Follow the instructions on the activity in iLearn then return and replace the color codes below with the hex color codes (the 6 digit numbers that show at the bottom of each color) for the colors you have chosen below.  You should have at least 2 colors but do not have to fill in all 4 if you do not need them.  -->
+
+			<!-- Copy and paste the URL to your finished palette below Make sure to paste it into both spots -->
+			Palette URL:
+			<a
+				href="https://coolors.co/1f3b2d-f2c14e-d95d39-f5f5f5-222222"
+				target="_blank"
+				>https://coolors.co/1f3b2d-f2c14e-d95d39-f5f5f5-222222</a
+			>
+
+			<table class="colors">
+				<tbody>
+					<tr>
+						<th>Primary</th>
+						<th>Secondary</th>
+						<th>Accent 1</th>
+						<th>Accent 2</th>
+					</tr>
+					<!-- Replace the numbers in the boxes below with your hex color codes. Then switch to the site-plan.css file and change your colors there as well. -->
+					<tr>
+						<td class="primary">[#1F3B2D]</td>
+						<td class="secondary">[#F2C14E]</td>
+						<td class="accent1">[#D95D39]</td>
+						<td class="accent2">[#F5F5F5]</td>
+					</tr>
+				</tbody>
+			</table>
+
+			
+
+			<h3>Pseudocode for your project</h3>
+
+			<p>
+				Create an array of Survivor season objects.
+                Each object will store season number, title, location, era, winner, number of players, and watched status.
+
+                    When the page loads:
+                    Get the season card container from the HTML.
+                    Get the search input from the HTML.
+                    Get the filter dropdown from the HTML.
+                    Get the progress text from the HTML.
+                    Display all Survivor seasons on the page.
+
+                    To display seasons:
+                    Clear the season card container.
+                    Loop through the seasons array using forEach().
+                    For each season:
+                        Create a card.
+                        Add the season title, number, location, era, winner, and players.
+                        Add a button that says "Mark Watched" or "Watched".
+                        Add the card to the page.
+
+                    When the user types in the search box:
+                    Get the search text.
+                    Use filter() to find seasons where the title, location, or winner matches the search.
+                    Display only the matching seasons.
+
+                    When the user chooses an era from the dropdown:
+                    Get the selected era.
+                    If the selected era is "all":
+                        Show all seasons.
+                    Otherwise:
+                        Use filter() to show only seasons from that era.
+
+                    When the user clicks a watched button:
+                    Find the selected season in the array.
+                    Change its watched value from false to true, or true to false.
+                    Update the season cards.
+                    Update the watched progress.
+
+                    To update progress:
+                    Use filter() to count seasons where watched is true.
+                    Display the number watched out of the total number of seasons.
+
+                    When the user clicks "Random Season":
+                    Use filter() to get seasons that are not watched.
+                    If there are unwatched seasons:
+                        Randomly select one season.
+                        Display it as the recommended season.
+                    Else:
+                        Show a message that all seasons have been watched.
+			</p>
+
+			<h3>Wireframes</h3>
+
+			<h3>Landing page</h3>
+
+			<img src="/survivor-tracker/images/home-mobile.png" alt="mobile home page wireframe" />
+            <img src="/survivor-tracker/images/home-desktop.png" alt="desktop home page wireframe" />
+
+			<h3>[Page 2 if needed]</h3>
+
+			<img src="/survivor-tracker/images/seasons-mobile.png" alt="mobile page 2 wireframe" />
+            <img src="/survivor-tracker/images/seasons-desktop.png" alt="desktop page 2 wireframe" />
+		</main>
+	</body>
+</html>
