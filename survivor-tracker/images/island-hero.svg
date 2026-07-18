@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title desc">
+<title id="title">Tropical island sunset</title>
+<desc id="desc">A stylized island, ocean, sun, and palm trees.</desc>
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2c14e"/><stop offset="1" stop-color="#d95d39"/></linearGradient></defs>
+<rect width="720" height="520" rx="36" fill="url(#sky)"/>
+<circle cx="545" cy="132" r="62" fill="#fff4c7" opacity=".9"/>
+<path d="M0 330c120-35 220 30 350 0s240-15 370 20v170H0Z" fill="#2d6980"/>
+<path d="M0 385c150-35 235 25 370 0s230-10 350 12v123H0Z" fill="#1c5368"/>
+<path d="M150 394c100-90 260-92 390 0H150Z" fill="#f8d681"/>
+<path d="M390 388c-7-120 22-205 88-259-51 19-81 52-100 96 2-53-15-91-55-119 22 48 26 95 11 141-26-33-61-52-107-56 58 31 101 97 111 197h52Z" fill="#173f2d"/>
+<path d="M180 396c-3-65 13-111 48-140-27 10-44 28-54 52 1-29-8-49-29-65 12 27 14 53 6 78-14-18-33-28-58-30 31 17 54 53 59 105h28Z" fill="#214f38"/>
+</svg>

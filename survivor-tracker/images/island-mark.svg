@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="title">
+<title id="title">Island logo</title>
+<circle cx="50" cy="50" r="48" fill="#f2c14e"/>
+<path d="M18 72c18-14 46-14 64 0H18Z" fill="#d95d39"/>
+<path d="M54 68c-2-20 2-34 15-43-11 2-18 7-23 15 1-12-3-20-12-26 4 11 5 21 2 31-5-7-12-11-22-12 12 8 20 20 22 35h18Z" fill="#1f3b2d"/>
+</svg>

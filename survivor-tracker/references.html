@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="References and project information for Survivor Season Tracker.">
+  <title>References | Survivor Season Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="images/island-mark.svg" alt="Survivor Season Tracker island logo" width="54" height="54">
+      <span>Survivor Season Tracker</span>
+    </a>
+    <button class="menu-button" id="menuButton" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="seasons.html">Seasons</a>
+      <a class="active" href="references.html">References</a>
+    </nav>
+  </header>
+
+  <main class="page-shell prose-page">
+    <section class="page-heading">
+      <p class="eyebrow">Project details</p>
+      <h1>References</h1>
+      <p>This page documents the data and visual sources used in the project.</p>
+    </section>
+
+    <section class="content-card">
+      <h2>Season information</h2>
+      <p>Season titles, locations, winners, and cast sizes were summarized from publicly available Survivor season information. Verify all facts before final submission if your instructor requires formal source citations.</p>
+      <ul>
+        <li>Official Survivor and CBS program pages</li>
+        <li>Survivor season summaries and episode guides</li>
+      </ul>
+    </section>
+
+    <section class="content-card">
+      <h2>Images</h2>
+      <p>The logo, island illustration, and card artwork in this starter project are original SVG graphics created for this assignment. They do not use official Survivor logos or copyrighted promotional photographs.</p>
+    </section>
+
+    <section class="content-card">
+      <h2>Technical notes</h2>
+      <p>The tracker uses JavaScript objects and arrays, array methods, DOM manipulation, event listeners, template literals, conditional logic, and localStorage.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> Roman Cerdas</p>
+    <p>Last modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

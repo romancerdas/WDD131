@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Track watched Survivor seasons, monitor your progress, and discover what to watch next."
+  >
+
+  <title>Survivor Season Tracker</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img
+        src="images/island-mark.svg"
+        alt="Survivor Season Tracker island logo"
+        width="54"
+        height="54"
+      >
+      <span>Survivor Season Tracker</span>
+    </a>
+
+    <button
+      class="menu-button"
+      id="menuButton"
+      type="button"
+      aria-label="Open navigation"
+      aria-expanded="false"
+      aria-controls="mainNav"
+    >
+      ☰
+    </button>
+
+    <nav id="mainNav" aria-label="Primary navigation">
+      <a class="active" href="index.html" aria-current="page">Home</a>
+      <a href="seasons.html">Seasons</a>
+      <a href="references.html">References</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Outwit. Outplay. Outlast.</p>
+
+        <h1>Keep track of every Survivor season you have watched.</h1>
+
+        <p>
+          Browse all 50 completed U.S. Survivor seasons, search by title,
+          location, or winner, save your progress, and get a random
+          recommendation from your unwatched list.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button primary" href="seasons.html">
+            Open the tracker
+          </a>
+
+          <button
+            class="button secondary"
+            id="homeRandomButton"
+            type="button"
+          >
+            Recommend a season
+          </button>
+        </div>
+      </div>
+
+      <img
+        src="images/island-hero.svg"
+        alt="Illustration of a tropical island at sunset"
+        width="720"
+        height="520"
+      >
+    </section>
+
+    <section class="dashboard" aria-labelledby="progressHeading">
+      <div>
+        <div>
+          <p class="eyebrow">Your progress</p>
+          <h2 id="progressHeading">Watched seasons</h2>
+        </div>
+
+        <p id="homeProgressText">0 of 50 seasons watched</p>
+      </div>
+
+      <div
+        class="progress-track"
+        role="progressbar"
+        aria-label="Watched season progress"
+        aria-valuemin="0"
+        aria-valuemax="50"
+        aria-valuenow="0"
+        aria-valuetext="0 of 50 seasons watched"
+      >
+        <div id="homeProgressBar"></div>
+      </div>
+    </section>
+
+    <section
+      class="recommendation"
+      id="recommendationPanel"
+      aria-labelledby="recommendationTitle"
+      aria-live="polite"
+    >
+      <p class="eyebrow">Next up</p>
+
+      <h2 id="recommendationTitle">
+        Need a recommendation?
+      </h2>
+
+      <p id="recommendationText">
+        Choose the recommendation button to select an unwatched season.
+      </p>
+    </section>
+
+    <section class="features" aria-labelledby="featuresHeading">
+      <h2 id="featuresHeading">Built for Survivor fans</h2>
+
+      <div class="feature-grid">
+        <article>
+          <h3>Track your progress</h3>
+          <p>
+            Mark seasons as watched and keep your watch history saved in
+            your browser using localStorage.
+          </p>
+        </article>
+
+        <article>
+          <h3>Find seasons quickly</h3>
+          <p>
+            Search by season number, title, winner, or filming location,
+            and filter by era or watched status.
+          </p>
+        </article>
+
+        <article>
+          <h3>Choose what to watch next</h3>
+          <p>
+            Use the random recommendation tool to select one of your
+            unwatched seasons.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="currentYear"></span> Roman Cerdas
+    </p>
+
+    <p>
+      Last modified: <span id="lastModified"></span>
+    </p>
+  </footer>
+</body>
+</html>

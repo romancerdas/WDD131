@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Browse, search, filter, sort, and track all 50 completed U.S. Survivor seasons."
+  >
+
+  <title>Season Tracker | Survivor Season Tracker</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img
+        src="images/island-mark.svg"
+        alt="Survivor Season Tracker island logo"
+        width="54"
+        height="54"
+      >
+      <span>Survivor Season Tracker</span>
+    </a>
+
+    <button
+      class="menu-button"
+      id="menuButton"
+      type="button"
+      aria-label="Open navigation"
+      aria-expanded="false"
+      aria-controls="mainNav"
+    >
+      ☰
+    </button>
+
+    <nav id="mainNav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a class="active" href="seasons.html" aria-current="page">Seasons</a>
+      <a href="references.html">References</a>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-heading">
+      <p class="eyebrow">Season library</p>
+
+      <h1>Find your next season</h1>
+
+      <p>
+        Browse all 50 completed U.S. Survivor seasons. Use the controls
+        below to search, filter, sort, and update your watch history.
+      </p>
+    </section>
+
+    <div class="tracker-summary" aria-live="polite">
+      <div>
+        <strong id="progressText">0 of 50 watched</strong>
+        <span id="resultsText">50 results</span>
+      </div>
+
+      <div
+        class="progress-track"
+        role="progressbar"
+        aria-label="Watched season progress"
+        aria-valuemin="0"
+        aria-valuemax="50"
+        aria-valuenow="0"
+        aria-valuetext="0 of 50 seasons watched"
+      >
+        <div id="progressBar"></div>
+      </div>
+    </div>
+
+    <form class="controls" aria-label="Season search and filter controls">
+      <label for="searchInput">
+        Search
+        <input
+          id="searchInput"
+          name="search"
+          type="search"
+          placeholder="Title, winner, location..."
+          autocomplete="off"
+        >
+      </label>
+
+      <label for="eraFilter">
+        Era
+        <select id="eraFilter" name="era">
+          <option value="all">All eras</option>
+          <option value="Classic">Classic</option>
+          <option value="Middle">Middle</option>
+          <option value="Modern">Modern</option>
+          <option value="New Era">New Era</option>
+        </select>
+      </label>
+
+      <label for="statusFilter">
+        Status
+        <select id="statusFilter" name="status">
+          <option value="all">All seasons</option>
+          <option value="watched">Watched</option>
+          <option value="unwatched">Unwatched</option>
+        </select>
+      </label>
+
+      <label for="sortSelect">
+        Sort
+        <select id="sortSelect" name="sort">
+          <option value="number-asc">
+            Season number: low to high
+          </option>
+          <option value="number-desc">
+            Season number: high to low
+          </option>
+          <option value="title-asc">
+            Title: A–Z
+          </option>
+          <option value="title-desc">
+            Title: Z–A
+          </option>
+          <option value="players-desc">
+            Most players
+          </option>
+        </select>
+      </label>
+
+      <button
+        class="button primary control-button"
+        id="randomButton"
+        type="button"
+      >
+        Random unwatched
+      </button>
+    </form>
+
+    <section
+      class="recommendation compact"
+      id="trackerRecommendation"
+      aria-labelledby="trackerRecommendationTitle"
+      aria-live="polite"
+      hidden
+    >
+      <p class="eyebrow">Recommendation</p>
+
+      <h2 id="trackerRecommendationTitle">
+        Season recommendation
+      </h2>
+
+      <p id="trackerRecommendationText">
+        Select “Random unwatched” to receive a season recommendation.
+      </p>
+    </section>
+
+      <div
+        id="seasonGrid"
+        class="season-grid"
+        aria-live="polite"
+      ></div>
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="currentYear"></span> Roman Cerdas
+    </p>
+
+    <p>
+      Last modified: <span id="lastModified"></span>
+    </p>
+  </footer>
+</body>
+</html>
